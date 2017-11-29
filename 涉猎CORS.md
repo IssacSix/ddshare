@@ -55,7 +55,7 @@ CORS（cross origin resource sharing）: 跨域资源共享。允许浏览器向
    * 可选
    * boolean: 默认true
    * 作用：是否允许发送cookie
-3. Access-Control-Expose-Headers
+3. Access-Control-Allow-Headers
    * 可选
    * 默认可以拿到6个属性：
      * Cache-Control
@@ -64,7 +64,7 @@ CORS（cross origin resource sharing）: 跨域资源共享。允许浏览器向
      * Expires
      * Last-Modified
      * Pragma
-4. Access-Control-Expose-Method
+4. Access-Control-Allow-Method
    * 必填
    * 作用：列出浏览器的CORS可能是使用哪些HTTP方法
 
