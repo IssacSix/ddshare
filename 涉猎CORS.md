@@ -10,17 +10,21 @@ CORS（cross origin resource sharing）: 跨域资源共享。允许浏览器向
 
 服务器支持：**接口实现CORS**是关键
 
-浏览器：除了IE10 以上的高级浏览器都能支持
+浏览器：IE10 以上的高级浏览器都能支持
 
 
 
 ### 对不同类型的CORS请求，浏览器做出的不同反应机制
+
+（图中所谓的简单的请求：请查看下一节）
 
 ![=处理流程分析](https://raw.githubusercontent.com/IssacSix/gitImags/master/20171128/cors.png)
 
 
 
 ### CORS的请求分类
+
+参考
 
 #### 简单请求 / 非简单请求怎么区分呢
 
@@ -37,6 +41,8 @@ CORS（cross origin resource sharing）: 跨域资源共享。允许浏览器向
      * `application/x-www-form-urlencoded`
      * `multipart/form-data`
      * `text/plain`
+
+   **同时满足以上两个条件就为简单请求，否则为非简单请求**
 
 
 
@@ -61,4 +67,15 @@ CORS（cross origin resource sharing）: 跨域资源共享。允许浏览器向
 4. Access-Control-Expose-Method
    * 必填
    * 作用：列出浏览器的CORS可能是使用哪些HTTP方法
+
+
+
+
+### 参考文献
+
+1. [MND web docs - Access-Control-Allow-Headers](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/Access-Control-Allow-Headers)
+2. [MDN - HTTP 访问控制CORS](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Access_control_CORS)
+3. [阮大大CORS详解](http://www.ruanyifeng.com/blog/2016/04/cors.html)
+
+
 
