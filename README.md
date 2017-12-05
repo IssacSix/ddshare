@@ -1,2 +1,2 @@
 # ddshare
-Welcome to dingding's share documents
+最近关于我前端搬砖几年的技术点的总结，随便瞎写的几片博文
