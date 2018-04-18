@@ -4,7 +4,7 @@
 
 ### path模块
 
-####【第一天打卡 time: 04.12】basename / delimiter / dirname / extname / formate
+####【第1天打卡 time: 04.12】basename / delimiter / dirname / extname / formate
 
 1. path.basename()  返回path的最后一部分
 
@@ -56,7 +56,7 @@
    权重从高到低 dir => root => base => name => ext
    ```
 
-####【第二天打卡 time: 04.13】isAbsolute / join / normalize / parse / resolve / 
+####【第2天打卡 time: 04.13】isAbsolute / join / normalize / parse / resolve / 
 
 1. path.isAbsolute()   返回一个路径是否是绝对路径
 
@@ -108,4 +108,47 @@
    // 返回: ['foo', 'bar', 'baz']
    ```
 
-   ​
+
+
+####【第3天打卡 time: 04.16】global 全局对象
+
+1. 作用域在模块内：
+   * _ _dirname
+   * _ _filename
+   * exports
+   * module
+   * require()
+2. 作用域在全局：
+   * Buffer
+   * setTimeOut() / clearTimeout()
+   * setInterval() / clearInterval()
+   * setImmediate() / clearImmediate()
+   * console
+   * process
+
+
+
+####【第4天打卡 time: 04.17】new URL() / new URLSearchParams() / 
+
+1. ```
+   const { URL } = require('url')
+   const myUrl = new URL('https://dingding:123@example.com?id=222&username=dingding')
+
+   // console.log(myUrl)
+   URL {
+     	href: 'https://dingding:123@example.com/?id=222&username=dingding',
+     	origin: 'https://example.com',
+     	protocol: 'https:',
+     	username: 'dingding',
+     	password: '123',
+     	host: 'example.com',
+       hostname: 'example.com',
+       port: '',
+       pathname: '/',
+       search: '?id=222&username=dingding',
+       searchParams: URLSearchParams { 'id' => '222', 'username' => 'dingding' },
+     	hash: '' 
+   }
+   ```
+
+2. ​
