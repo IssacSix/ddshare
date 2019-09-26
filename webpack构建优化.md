@@ -130,9 +130,9 @@ optimization: {
 
 
 
-### 3.3 分包
+#### 3.3 分包
 
-#### 3.3.1 splitChunkPlugin (内置)
+##### 3.3.1 splitChunkPlugin (内置)
 
 ```js
 optimization: {
@@ -150,7 +150,7 @@ optimization: {
 
 
 
-#### 3.3.2 DllPlugin
+##### 3.3.2 DllPlugin
 
 ```js
 // dll.webapck.config.js example
